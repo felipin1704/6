@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reserva | JOFEL PLAY LOCAÇÕES</title>
+  <meta
+    name="description"
+    content="Solicite sua reserva de PS5 com a JOFEL PLAY LOCAÇÕES. Preencha seus dados e finalize o atendimento pelo WhatsApp."
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="site-body reserve-page">
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-grid"></div>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-badge">JP</span>
+        <span class="brand-text">
+          <strong>JOFEL PLAY</strong>
+          <small>LOCAÇÕES</small>
+        </span>
+      </a>
+
+      <a href="index.html" class="btn btn-secondary">Voltar ao início</a>
+    </div>
+  </header>
+
+  <main class="section reserve-main">
+    <div class="container reserve-layout">
+      <section class="reserve-copy reveal">
+        <span class="pill">Solicitação de reserva</span>
+        <h1>Preencha os dados e envie seu pedido com mais segurança</h1>
+        <p>
+          Sua solicitação será enviada para análise e confirmação no WhatsApp.
+          Preencha as informações com atenção para deixar o atendimento mais rápido, mais claro e mais profissional.
+        </p>
+
+        <div class="reserve-benefits">
+          <article class="glass-card">
+            <strong>Atendimento direto</strong>
+            <p>Depois do envio, o contato continua no WhatsApp.</p>
+          </article>
+
+          <article class="glass-card">
+            <strong>Mais organização</strong>
+            <p>Os dados ficam reunidos para facilitar a confirmação da locação.</p>
+          </article>
+
+          <article class="glass-card">
+            <strong>Confirmação manual</strong>
+            <p>A reserva só é validada após análise e retorno da JOFEL PLAY.</p>
+          </article>
+        </div>
+
+        <div class="reserve-note">
+          <h3>Importante</h3>
+          <ul>
+            <li>O envio do formulário gera uma solicitação, não uma confirmação automática.</li>
+            <li>Os dados informados ajudam na identificação e organização da locação.</li>
+            <li>O fechamento final continua sendo feito pelo WhatsApp.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="reserve-form-card reveal">
+        <div class="form-top">
+          <span class="section-tag">Formulário</span>
+          <h2>Solicitar locação</h2>
+          <p>Preencha os campos abaixo para enviar seu pedido.</p>
+        </div>
+
+        <form id="reservaForm" class="reserve-form">
+          <div class="form-block">
+            <h3>Dados pessoais</h3>
+            <div class="form-grid">
+              <div class="form-group full">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required />
+              </div>
+
+              <div class="form-group">
+                <label for="telefone">Número de telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required />
+              </div>
+
+              <div class="form-group">
+                <label for="whatsapp">WhatsApp</label>
+                <input type="tel" id="whatsapp" name="whatsapp" placeholder="(00) 00000-0000" required />
+              </div>
+
+              <div class="form-group">
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required />
+              </div>
+
+              <div class="form-group">
+                <label for="nascimento">Data de nascimento</label>
+                <input type="date" id="nascimento" name="nascimento" required />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-block">
+            <h3>Endereço</h3>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" name="cep" placeholder="00000-000" required />
+              </div>
+
+              <div class="form-group">
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="cidade" placeholder="Sua cidade" required />
+              </div>
+
+              <div class="form-group full">
+                <label for="rua">Rua / Avenida</label>
+                <input type="text" id="rua" name="rua" placeholder="Digite sua rua ou avenida" required />
+              </div>
+
+              <div class="form-group">
+                <label for="numero">Número</label>
+                <input type="text" id="numero" name="numero" placeholder="Número da residência" required />
+              </div>
+
+              <div class="form-group">
+                <label for="bairro">Bairro</label>
+                <input type="text" id="bairro" name="bairro" placeholder="Seu bairro" required />
+              </div>
+
+              <div class="form-group full">
+                <label for="complemento">Complemento</label>
+                <input
+                  type="text"
+                  id="complemento"
+                  name="complemento"
+                  placeholder="Casa, lote, referência, etc. (opcional)"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-block">
+            <h3>Detalhes da reserva</h3>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="dataReserva">Data desejada</label>
+                <input type="date" id="dataReserva" name="dataReserva" required />
+              </div>
+
+              <div class="form-group">
+                <label for="horaReserva">Horário desejado</label>
+                <input type="time" id="horaReserva" name="horaReserva" required />
+              </div>
+
+              <div class="form-group">
+                <label for="tipoLocacao">Tipo de locação</label>
+                <select id="tipoLocacao" name="tipoLocacao" required>
+                  <option value="">Selecione</option>
+                  <option value="1 hora">1 hora</option>
+                  <option value="diária">Diária</option>
+                  <option value="final de semana">Final de semana</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="manetes">Quantidade de manetes</label>
+                <select id="manetes" name="manetes" required>
+                  <option value="">Selecione</option>
+                  <option value="1 manete">1 manete</option>
+                  <option value="2 manetes">2 manetes</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="retirada">Forma de recebimento</label>
+                <select id="retirada" name="retirada" required>
+                  <option value="">Selecione</option>
+                  <option value="retirada no local">Retirada no local</option>
+                  <option value="entrega">Entrega</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="pagamento">Forma de pagamento</label>
+                <select id="pagamento" name="pagamento" required>
+                  <option value="">Selecione</option>
+                  <option value="pix">Pix</option>
+                  <option value="dinheiro">Dinheiro</option>
+                  <option value="a combinar">A combinar</option>
+                </select>
+              </div>
+
+              <div class="form-group full">
+                <label for="observacoes">Observações</label>
+                <textarea
+                  id="observacoes"
+                  name="observacoes"
+                  rows="4"
+                  placeholder="Digite qualquer observação importante sobre a sua reserva"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="summary-panel" id="resumoReserva">
+            <h3>Resumo da solicitação</h3>
+            <p>Preencha os campos acima para visualizar um resumo antes de enviar.</p>
+          </div>
+
+          <div class="checks">
+            <label class="check-item">
+              <input type="checkbox" id="dadosVerdadeiros" required />
+              <span>Declaro que os dados informados são verdadeiros.</span>
+            </label>
+
+            <label class="check-item">
+              <input type="checkbox" id="aceiteTermos" required />
+              <span>Li e aceito os termos da locação.</span>
+            </label>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary btn-lg submit-btn">Enviar pedido de reserva</button>
+            <a href="index.html" class="btn btn-secondary btn-lg">Voltar</a>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand footer-brand">
+          <span class="brand-badge">JP</span>
+          <span class="brand-text">
+            <strong>JOFEL PLAY</strong>
+            <small>LOCAÇÕES</small>
+          </span>
+        </a>
+        <p class="footer-copy">Solicitação online, atendimento direto no WhatsApp e mais organização para a sua locação de PS5.</p>
+      </div>
+
+      <div>
+        <h3>Informações</h3>
+        <ul class="footer-links">
+          <li><a href="index.html#como-funciona">Como funciona</a></li>
+          <li><a href="index.html#duvidas">Dúvidas frequentes</a></li>
+          <li><a href="index.html#jogos">Jogos em destaque</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Contato</h3>
+        <ul class="footer-links">
+          <li><a href="https://wa.me/5533999296276" target="_blank" rel="noopener noreferrer">WhatsApp: (33) 99929-6276</a></li>
+          <li><a href="https://www.instagram.com/jofelplay/" target="_blank" rel="noopener noreferrer">Instagram oficial</a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61575388936324" target="_blank" rel="noopener noreferrer">Facebook oficial</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 JOFEL PLAY LOCAÇÕES. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
